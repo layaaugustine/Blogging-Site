@@ -1,9 +1,67 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block title %}
     My Blog
 {% endblock %}
 
+{% block css_files %}
+
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+
+{% endblock %}
+
 {% block content %}
-    <h1>Welcome to my blog</h1>
+
+    <header id="main-navigation">
+
+        <h1><a href="">Laya's Blog</a></h1>
+
+        <nav>
+            <a href="">All Posts</a>
+        </nav>
+
+    </header>
+
+    <section id="welcome">
+        <header>
+            <img src="" alt="Laya - The Author Of This Blog">
+            <h1>LAYA'S BLOG</h1>
+        </header>
+        
+        <P>Hi, I am Laya and I love to blog about tech</P>
+    </section>
+
+    <section id="latest-posts">
+        <h2>My Latest Thonughts</h2>
+        <ul>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="" alt="Mountain Hiking">
+                        <div class="post__content">
+                            <h3>Mountain Hiking</h3>
+                            <p>There is nothing like views like mountain</p>
+
+                        </div>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h1>What I Do</h1>
+
+        <p>I love Programming, I love to help others and I 
+            enjoy exploring new technologies in general!
+        </p>
+
+        <p>
+            My goal is to keep on growing as a developer - and if I could help
+            you to same,I'd be very happy!
+        </p>
+
+    </section>
 {% endblock %}
