@@ -25,7 +25,7 @@
         </div>
         
         <article>
-            <img src="{% static 'blog/images/'|add:postt.image_name %}" alt="{{ postt.title }}"/> 
+            <img src="{{ postt.image.url }}" alt="{{ postt.title }}"/> 
             <address>By <a href="mailto:{{ postt.author.email_address }}" >{{ postt.author }}</a></address>
             <div>
                 Last updated on <time>{{ postt.date|date:"d M Y" }}</time>

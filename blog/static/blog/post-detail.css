@@ -23,7 +23,7 @@ body {
     color: white;
     font-size: 4.5rem;
     /* this */
-    margin-bottom: 0.25rem;     
+    /* margin-bottom: 0.25rem;      */
   }
   
   #summary article {
@@ -49,16 +49,16 @@ body {
     font-weight: bold;
   }
 
-
-
-  #summary  a {
-    color: white;
-    text-decoration: none;
-  }
-  
   #summary time {
     font-weight: bold;
   } 
+
+  /* #summary  a {
+    color: white;
+    text-decoration: none;
+  } */
+  
+  
   
   main {
     width: 90%;
