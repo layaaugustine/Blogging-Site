@@ -5,8 +5,15 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         exclude =["post"]
-        label={
+        labels={
             "user_name":"Your Name",
             "user_email":"Your Email",
             "text":"Your Comment"
         }
+
+        # error_messages ={
+        #     "Your Name":{
+        #         "required":"Your name not be empty",
+        #         "max_length":"please enter short name!"
+        #     }
+        # }
