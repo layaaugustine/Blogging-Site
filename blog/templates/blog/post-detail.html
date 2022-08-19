@@ -31,7 +31,7 @@
         <div id="read-later">
             <form action="{% url 'read-later' %}" method="POST">
                 {% csrf_token %}
-            <input type="text" value="{{ postt.id }}" name="post_id">
+            <input type="hidden" value="{{ postt.id }}" name="post_id">
             <button>Read Later</button>
             </form>
         </div>  
